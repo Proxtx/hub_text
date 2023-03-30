@@ -1,0 +1,17 @@
+<style>
+  h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    font-size: 500%;
+  }
+</style>
+<h1 id="text"></h1>
+<script type="module">
+  let id = "$ID";
+  let options = window.screenOptions[id];
+  let textElem = options.document.getElementById("text");
+  textElem.innerText = options.text;
+</script>
